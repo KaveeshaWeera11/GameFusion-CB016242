@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GameFusion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="FAQ.css">
+    <link rel="icon" type="image/png" href="Gamefusion logo/GameFusion.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<header>
+    <a href="./index.html">
+        <img src="Gamefusion logo/GameFusion.png" alt="GameFusion Logo" class="logo">
+      </a>
+    
+    <!-- Menu button to toggle header -->
+    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
+
+    <!-- Navbar -->
+    <nav>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./About_us.html">About Us</a></li>
+        <li><a href="./Upcoming_games.html">Upcoming Games</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle">Accessories</a>
+            <ul class="dropdown-menu">
+                <li><a href="Consoles.html">Consoles</a></li>
+                <li><a href="Peripherals.html">Peripherals</a></li>
+            </ul>
+        </li>
+        <li><a href="./Games.html">Games</a></li>
+        <li><a href="./FAQ.html">FAQ</a></li>
+    </ul>
+    </nav>
+</header>
+<body>
+
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h1 class="section-title">Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <a href="#faq1" class="faq-question">What is your return policy?</a>
+                <p class="faq-answer" id="faq1">
+                    We accept returns within 30 days of purchase. Items must be unused and in their original condition.
+                </p>
+            </div>
+            <div class="faq-item">
+                <a href="#faq2" class="faq-question">Do you offer free shipping?</a>
+                <p class="faq-answer" id="faq2">
+                    Yes, we offer free shipping on orders over LKR 10,000.
+                </p>
+            </div>
+            <div class="faq-item">
+                <a href="#faq3" class="faq-question">Can I track my order?</a>
+                <p class="faq-answer" id="faq3">
+                    Yes, once your order is shipped, you will receive a tracking number via email.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <h2 class="section-title">Still Have Questions? Ask Us!</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="question">Your Question</label>
+                    <textarea id="question" name="question" rows="5" placeholder="Your Question" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Your Question</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                <p>Phone: +94 XXXXXXXXX</p>
+                <p>Address: No. 01, Dalada Veediya, Kandy Road</p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section recommendations">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Latest Products</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section newsletter">
+                <h3>Stay Updated</h3>
+                <p>Subscribe to our newsletter for the latest news and exclusive offers:</p>
+                <form action="#" method="POST" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 GameFusion. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="redo.js"></script>
+</body>
+
+</html>
